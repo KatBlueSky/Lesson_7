@@ -1,0 +1,418 @@
+/* &display=swap */
+@import "null.css";
+/* ================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap");
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+body {
+	font-size: 20px;
+	font-family: Lato;
+	color: #838383;
+}
+.title {
+	font-size: 35px;
+	text-align: right;
+	font-weight: 400;
+	font-style: italic;
+	margin: 30px 0px;
+	letter-spacing: 2px;
+}
+
+.text,
+.text-block-rgb,
+.text-block-rgba,
+.text-block-opacity {
+	color: #828282;
+	padding: 15px 30px 15px 15px;
+}
+.color-block {
+	background-color: #edfd73;
+}
+.color-block-rgb {
+	background-color: #e7a41f;
+}
+
+.color-block-rgba {
+	background-color: rgba(176, 110, 234, 0.5);
+}
+.color-block-opacity {
+	/* Экспериментб текст тоже становиться прозрачным*/
+	opacity: 0.5;
+	background-color: rgb(60, 2, 45);
+}
+
+.title-foto {
+	max-width: 1240px;
+	margin: 0px 0px 30px 0px;
+}
+
+.list {
+	margin: 0px 0px 30px 0px;
+}
+.text-list {
+	color: #828282;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 25px;
+	padding: 0px 0px 15px 15px;
+}
+
+.background-block {
+	max-width: 800px;
+	margin: 0px 0px 30px 0px;
+	padding: 15px;
+	line-height: 1.5;
+	/* Фон как обои */
+	background-image: url("../img/foto-4.jpg");
+}
+
+.background-block-text {
+	color: #ffdada;
+}
+
+.background-block-text span {
+	font-weight: 900;
+	font-style: italic;
+}
+
+.background-block-and-color {
+	max-width: 800px;
+	margin: 0px 0px 30px 0px;
+	padding: 15px;
+	color: #ffdada;
+	background-color: rgb(241, 69, 195);
+	background-repeat: no-repeat;
+	background-image: url("../img/foto-6.jpg");
+}
+
+.background-block-gradient {
+	max-width: 800px;
+	margin: 0px 0px 30px 0px;
+	padding: 15px;
+	color: #ffdada;
+	background-image: linear-gradient(
+		90deg,
+		rgba(247, 188, 188, 1) 0%,
+		rgba(158, 246, 255, 1) 53%,
+		rgba(255, 0, 138, 1) 100%
+	);
+}
+
+.background-block-repeat {
+	max-width: 800px;
+	margin: 0px 0px 30px 0px;
+	min-height: 170px;
+	padding: 15px 15px 15px 315px;
+	color: #fbfbfb;
+	background-color: rgba(247, 188, 188, 1);
+	background-image: url("../img/foto-6.jpg");
+	background-repeat: no-repeat;
+}
+
+.background-block-patern {
+	/* max-width: 800px; */
+	margin: 0px 0px 30px 0px;
+	padding: 15px;
+	color: #595959;
+	background-image: url("../img/foto-pizza.jpg");
+	background-repeat: repeat-x;
+}
+/* Eще есть repeat-y, round, space, Эти примеры я не приводила */
+
+.block-background-position {
+	/* max-width: 800px; */
+	margin: 0px 0px 30px 0px;
+	padding: 15px;
+	color: #595959;
+	background-color: rgb(255, 203, 143);
+	background-image: url("../img/foto-pizza-space.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-position: 50%; */
+	/* background-position: -10% 20%;
+		 background-position: 15px 25px; 
+		 background-position: top left; 
+		background-position: left; 
+		background-position: bottom right;*/
+}
+
+.block-about-size {
+	margin: 0px 0px 30px 0px;
+	max-width: 900px;
+	padding: 15px 15px 15px 330px;
+	color: #595959;
+	background-color: rgb(253, 232, 253);
+	background-image: url("../img/foto-8-small.jpg");
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+	background-size: auto 200px;
+	/* background-size: auto 50%; */
+	/* 50% от ширины блока*/
+	/* background-size: contain; */
+	/*высота меньше ширины, поэтому картинка берет найменьший размер блок, в даном случаи по высоте */
+	/* background-size: contain; */
+	/*высота меньше ширины, поэтому картинка берет найменьший размер блок, в даном случаи по высоте */
+	/* background-size: cover;
+	background-position: center; */
+}
+
+.background-attachment-text {
+	margin: 0px 0px 30px 0px;
+	padding: 150px 150px 300px 150px;
+	color: #ffffff;
+	background-image: url("../img/foto-7.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	/* background-attachment: center; */
+	/* background-attachment: local; */
+}
+
+/* Универсальная запись */
+.block-universal {
+	margin: 0px 0px 100px 0px;
+	padding: 15px 20px 300px 20px;
+	color: #ffffff;
+	background: url("../img/foto-9.jpg") center / cover no-repeat;
+}
+
+/* Изображение в списке */
+.item-list {
+	/* Изображение меньше чем тект, регулируем позиционированием */
+	background: url(../img/check.svg) 0 5px /10px no-repeat;
+	/* Изображение больше чем тект, регулируем позиционированием */
+	background: url(../img/check.svg) 15px 0 /25px no-repeat;
+	min-height: 25px;
+	padding: 0px 0px 0px 50px;
+	margin: 0px 0px 5px 0px;
+}
+
+.homework {
+	font-size: 25px;
+	font-style: italic;
+	opacity: 0.5;
+	margin: 0px 0px 30px 0px;
+	text-align: right;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 900;
+	text-align: center;
+	letter-spacing: 3px;
+	margin-bottom: 30px;
+}
+
+.patern-pizza {
+	margin: 0px 0px 30px 0px;
+	min-height: 100px;
+	color: #595959;
+	background-image: url("../img/italy-pattern.jpg");
+	background-repeat: repeat-x;
+}
+
+.item-italy {
+	text-align: justify;
+	/* font-size: 35px; */
+	/* Изображение меньше чем тект, регулируем позиционированием */
+	background: url(../img/item-italy.jfif) 15px 3px / 25px no-repeat;
+	/* Изображение больше чем тект, регулируем позиционированием */
+	min-height: 35px;
+	padding: 0px 0px 10px 50px;
+}
+
+.subitem-italy {
+	text-align: justify;
+	min-height: 25px;
+	padding: 10px 0px 0px 65px;
+	/* margin: 0px 0px 5px 0px; */
+	background: url(../img/foto-coliseum.jpg) 25px 15px/ 30px no-repeat;
+	/* Изображение больше чем тект, регулируем позиционированием */
+}
+
+.title-geographic,
+.title-climate,
+.title-besttime,
+.title-attractions {
+	font-size: 35px;
+	/* margin: 30px 0px 30px 0px; */
+	padding: 30px 0px 15px 0px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.text-geographic {
+	padding: 150px 0px 300px 600px;
+	text-align: justify;
+	color: #cecece;
+	line-height: 1.4;
+	background: url(../img/toscata-foto.jpg) 0 0 / contain no-repeat;
+}
+
+.text-climate {
+	padding: 100px 50px 200px 50px;
+	font-size: 25px;
+	color: #fbfbfb;
+	line-height: 1.4;
+	background: url("../img/climate-foto.jpg") center no-repeat fixed;
+}
+
+.text-besttime {
+	padding: 15px 50px 15px 780px;
+	color: #575757;
+	text-align: justify;
+	line-height: 1.4;
+	background-color: #a8cece;
+	background-repeat: no-repeat;
+	background-image: url("../img/besttime.jpg");
+}
+
+span > a {
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+.text-attractions,
+.text-attractions-1,
+.text-attractions-2,
+.text-attractions-3,
+.text-attractions-4 {
+	padding: 0px 15px 30px 15px;
+	color: #575757;
+	text-align: justify;
+	line-height: 1.4;
+}
+
+.text-attractions-1 {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 1000px 0px 15px;
+	min-height: 400px;
+	text-align: left;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #8c8cb2 url("../img/сoliseum-foto.jpg") center right no-repeat;
+}
+
+.text-attractions-2 {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 15px 15px 1000px;
+	min-height: 400px;
+	text-align: right;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #426e89 url("../img/panteon-foto.jpg") 0 0 no-repeat;
+}
+
+.text-attractions-3 {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 950px 15px 30px;
+	text-align: justify;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #e8d0a4 url("../img/forum-foto.jpg") 100% 100% no-repeat;
+}
+
+.text-attractions-4 {
+	margin: 0px 0px 30px 0px;
+	padding: 40px 30px 15px 950px;
+	min-height: 400px;
+	text-align: right;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #dfcb8c url("../img/vatikan-foto.jpg") 50% no-repeat;
+}
+
+.title-rome,
+.title-venice,
+.title-venice,
+.title-florence,
+.title-milan,
+.title-napoli {
+	font-size: 30px;
+	font-style: italic;
+	/* margin: 30px 0px 30px 0px; */
+	padding: 30px 0px 15px 0px;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+.text-rome {
+	padding: 0px 15px 30px 15px;
+	color: #575757;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/rome-foto.jpg") center no-repeat fixed;
+}
+
+.text-venice {
+	padding: 15px 15px 30px 500px;
+	color: #f8c0c0;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/venece-foto.jpg") 0 50% no-repeat local;
+}
+
+.text-florence {
+	padding: 15px 15px 15px 600px;
+	color: #8a8a8a;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/florence.jpg") 0 0 / contain no-repeat fixed;
+}
+
+.text-milan {
+	padding: 250px 15px 15px 500px;
+	color: #fffd79;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/milan.jpg") 0 0 / cover no-repeat;
+}
+
+.text-napoli {
+	padding: 0px 15px 0px 900px;
+	margin: 0px 0px 30px 0px;
+	color: #757575;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/napoli.jpg") top left/70% no-repeat;
+}
+
+.title-culinary {
+	font-size: 35px;
+	text-align: center;
+	font-weight: 400;
+	margin: 30px 0px;
+	letter-spacing: 2px;
+}
+
+.text-culinary {
+	padding: 290px 200px 290px 200px;
+	color: #666666;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/food-4.jpg");
+}
+
+.maket-figma{
+	margin: 30px 0px;
+	padding: 20px 200px 20px 200px;
+	font-size: 35px;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 2px;
+	background: radial-gradient(circle, rgba(255,187,231,1) 0%, rgba(98,136,255,1) 100%);
+
+}
